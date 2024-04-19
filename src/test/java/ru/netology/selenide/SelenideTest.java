@@ -1,7 +1,7 @@
 package ru.netology.selenide;
 
-import org.junit.jupiter.api.Test;
 import com.codeborne.selenide.Condition;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
 
 import java.time.Duration;
@@ -10,7 +10,6 @@ import java.time.format.DateTimeFormatter;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
-import static org.openqa.selenium.By.cssSelector;
 
 public class selenideTest {
 
@@ -33,6 +32,4 @@ public class selenideTest {
                 .shouldHave(Condition.exactText("Встреча успешно забронирована на " + planningDate));
 
     }
-
-
 }
