@@ -9,7 +9,9 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 import static com.codeborne.selenide.Selenide.*;
-public class CardTest {
+
+
+public class CardOrder {
     private String genetateDate(Long addDays, String pattern) {
         return LocalDate.now().plusDays(addDays).format(DateTimeFormatter.ofPattern(pattern));
     }
@@ -30,5 +32,6 @@ public class CardTest {
 
 
     }
+
 
 }
